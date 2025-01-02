@@ -36,8 +36,8 @@ export const ProjectDetails = () => {
           className="h-64 bg-gray-200 dark:bg-gray-700 w-full aspect-square rounded-lg bg-cover bg-no-repeat"
           style={{ 
             backgroundImage: project.previewImageLarge ?
-              `url("/assets/projects/${project.id}/images/${project.previewImageLarge}")` : 
-              `url("/assets/projects/default.jpg")`,
+              `url("./assets/projects/${project.id}/images/${project.previewImageLarge}")` : 
+              `url("./assets/projects/default.jpg")`,
           }}
         ></div>
         <div className="p-8">
@@ -84,7 +84,7 @@ export const ProjectDetails = () => {
             <div className="mb-4">
               {
                 project.images?.map((image) => (
-                  <img className="mb-2" src={ `/assets/projects/${project.id}/images/${image}` } />
+                  <img className="mb-2" src={ `./assets/projects/${project.id}/images/${image}` } />
                 ))
               }
             </div>
