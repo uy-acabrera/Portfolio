@@ -4,23 +4,25 @@ import { Button } from '../components/Button';
 const posts = [
   {
     id: 1,
-    title: 'Getting Started with React and TypeScript',
-    date: '2024-03-15',
-    summary: 'Learn how to set up a new React project with TypeScript and best practices for type safety.',
+    title: 'Why "Angular vs React" is the Wrong Question',
+    date: '2025-01-02',
+    summary: 'The debate over Angular vs React is one of the most discussed topics in web development.',
+    link: 'https://medium.com/@uy.acabrera/why-angular-vs-react-is-the-wrong-question-c2797eaa7696',
   },
   {
     id: 2,
-    title: 'Building Responsive Layouts with Tailwind CSS',
-    date: '2024-03-10',
-    summary: 'A comprehensive guide to creating responsive layouts using Tailwind CSS utility classes.',
+    title: 'How to Finally Understand Generics in TypeScript',
+    date: '2019-05-20',
+    summary: 'Let\'s demystify that weird <T> syntax and make it our friend instead of our enemy.',
+    link: 'https://medium.com/better-programming/typescript-generics-90be93d8c292',
   },
   {
     id: 3,
-    title: 'State Management in React Applications',
-    date: '2024-03-05',
-    summary: 'Exploring different state management solutions in React and when to use them.',
+    title: 'New Features in TypeScript You Didn\'t Know Exist',
+    date: '2019-06-10',
+    summary: 'A quick overview of the most exciting new features in TypeScript 3 that you might have missed!',
+    link: 'https://medium.com/bitsrc/new-features-in-typescript-you-didnt-know-exist-54b7ab8d0b4f',
   },
-  // Add more blog posts as needed
 ];
 
 export const Blog = () => {
@@ -36,7 +38,7 @@ export const Blog = () => {
             <h2 className="text-2xl font-semibold mb-2">{post.title}</h2>
             <p className="text-gray-500 dark:text-gray-300 mb-4">{post.date}</p>
             <p className="text-gray-600 dark:text-gray-200 mb-4">{post.summary}</p>
-            <Link to={`/blog/${post.id}`}>
+            <Link to={`${post.link}`} target="_blank">
               <Button>Read More</Button>
             </Link>
           </article>
