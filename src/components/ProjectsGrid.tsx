@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Project } from "../data/projects";
 import { Button } from "./Button";
+import { IMAGES } from "../data/images";
 
 export const ProjectsGrid = (props: { projects: Project[]; }) => {
   const projects: Project[] = props.projects;
@@ -13,8 +14,8 @@ export const ProjectsGrid = (props: { projects: Project[]; }) => {
               className="h-48 bg-gray-200 dark:bg-gray-700 w-full aspect-square rounded-lg bg-cover bg-no-repeat"
               style={{ 
                 backgroundImage: project.previewImageSmall ?
-                  `url("./assets/projects/${project.id}/images/${project.previewImageSmall}")` :
-                  `url("./assets/projects/default.jpg")`,
+                  `url("${IMAGES.PROJECTS}/${project.id}/images/${project.previewImageSmall}")` :
+                  `url("${IMAGES.PROJECTS}/default.jpg")`,
               }}
             ></div>
             <div className="p-6 min-h-[230px] flex flex-col justify-between">

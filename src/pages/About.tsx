@@ -1,6 +1,7 @@
 import { LinkIcon } from "@heroicons/react/24/outline";
 import { Button } from "../components/Button";
 import { Link } from "react-router-dom";
+import { IMAGES } from "../data/images";
 
 export const About = () => {
   return (
@@ -9,7 +10,7 @@ export const About = () => {
         <div>
           <div className="bg-gray-200 w-full aspect-square rounded-lg bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: 'url("./assets/me.jpg")',
+            backgroundImage: `url("${IMAGES.ME}")`,
           }}>
           </div>
         </div>

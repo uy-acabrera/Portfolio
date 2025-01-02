@@ -3,6 +3,7 @@ import { projects } from '../data/projects';
 import { Button } from '../components/Button';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import { YoutubeEmbed } from '../components/YoutubeEmbed';
+import { IMAGES } from '../data/images';
 
 export const ProjectDetails = () => {
   const { id } = useParams();
@@ -36,8 +37,8 @@ export const ProjectDetails = () => {
           className="h-64 bg-gray-200 dark:bg-gray-700 w-full aspect-square rounded-lg bg-cover bg-no-repeat"
           style={{ 
             backgroundImage: project.previewImageLarge ?
-              `url("./assets/projects/${project.id}/images/${project.previewImageLarge}")` : 
-              `url("./assets/projects/default.jpg")`,
+              `url("${IMAGES.PROJECTS}/${project.id}/images/${project.previewImageLarge}")` : 
+              `url("${IMAGES.PROJECTS}/default.jpg")`,
           }}
         ></div>
         <div className="p-8">
@@ -84,7 +85,7 @@ export const ProjectDetails = () => {
             <div className="mb-4">
               {
                 project.images?.map((image) => (
-                  <img className="mb-2" src={ `./assets/projects/${project.id}/images/${image}` } />
+                  <img className="mb-2" src={ `${IMAGES.PROJECTS}/${project.id}/images/${image}` } />
                 ))
               }
             </div>
