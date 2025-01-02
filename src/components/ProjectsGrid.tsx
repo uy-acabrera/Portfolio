@@ -13,8 +13,8 @@ export const ProjectsGrid = (props: { projects: Project[]; }) => {
               className="h-48 bg-gray-200 dark:bg-gray-700 w-full aspect-square rounded-lg bg-cover bg-no-repeat"
               style={{ 
                 backgroundImage: project.previewImageSmall ?
-                  `url("/assets/projects/${project.id}/images/${project.previewImageSmall}")` :
-                  `url("/assets/projects/default.jpg")`,
+                  `url("./assets/projects/${project.id}/images/${project.previewImageSmall}")` :
+                  `url("./assets/projects/default.jpg")`,
               }}
             ></div>
             <div className="p-6 min-h-[230px] flex flex-col justify-between">
