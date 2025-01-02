@@ -34,7 +34,7 @@ export const ProjectDetails = () => {
 
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
         <div
-          className="h-64 bg-gray-200 dark:bg-gray-700 w-full aspect-square rounded-lg bg-cover bg-no-repeat"
+          className="h-64 bg-gray-200 dark:bg-gray-700 w-full aspect-square rounded-lg bg-cover bg-center bg-no-repeat"
           style={{ 
             backgroundImage: project.previewImageLarge ?
               `url("${IMAGES.PROJECTS}/${project.id}/images/${project.previewImageLarge}")` : 

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
+import { IMAGES } from '../data/images';
 
 export const Hero = () => {
   return (
@@ -8,7 +9,7 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: 'url("https://lh3.googleusercontent.com/pw/AP1GczPSpERnv5rTSMKNItLiavmJeqmIG_pCi8zxtQKoXoGqUwhK9fHlHBaQOeWDtA1PSrlpLJ4Ww0XBTLeyDrhqA0TpfPfb_SB4YA2ANhsmkYYSDddBqMuASBaf3hR3YyfQlJC4FwJG1aRFhNBsIafcD7OP=w900-h599-s-no-gm?authuser=0")',
+          backgroundImage: `url("${IMAGES.LANDING}")`,
         }}
       >
         <div className="absolute inset-0 bg-black/50 dark:bg-black/50" />
