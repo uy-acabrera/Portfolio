@@ -9,7 +9,7 @@ export const About = () => {
         <div>
           <div className="bg-gray-200 w-full aspect-square rounded-lg bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: 'url("./assets/me.jpg")',
+            backgroundImage: 'url("/assets/me.jpg")',
           }}>
           </div>
         </div>
